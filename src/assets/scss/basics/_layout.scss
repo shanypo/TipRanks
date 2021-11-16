@@ -1,0 +1,12 @@
+.main-layout {
+    column-gap: 1.6rem;
+
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    >* {
+        grid-column: 2;
+        align-items: center;
+    }
+
+}

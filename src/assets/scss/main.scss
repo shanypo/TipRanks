@@ -1,0 +1,13 @@
+// basics
+@import './basics/base';
+@import './basics/helpers';
+@import './setup/mixin.scss';
+@import './basics/layout.scss';
+
+//pages
+@import './pages/Home';
+
+//cmp
+
+@import './cmp/StockPreview';
+@import './cmp/AppHeader';

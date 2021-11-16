@@ -1,0 +1,16 @@
+.stock-preview {
+    background-color: #199ca5;
+    color: white;
+
+    p:not(last-child) {
+        margin: 10px;
+
+        span {
+            font-weight: bolder;
+            padding-inline-end: 5px;
+        }
+    }
+
+
+
+}

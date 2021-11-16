@@ -1,0 +1,211 @@
+html {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.clean-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.clean-list > li {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex.space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex.auto-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex > *.full-grow {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Breakpoint mixins */
+.app-header {
+  -webkit-box-shadow: 0px 1px 6px 0px black;
+          box-shadow: 0px 1px 6px 0px black;
+  padding: 16px;
+}
+
+.app-header .logo {
+  gap: 10px;
+}
+
+.app-header .change-data {
+  gap: 10px;
+}
+
+.tab-nav {
+  padding: 16px 15px;
+  margin-bottom: 10px;
+}
+
+.tab-nav a {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.tab-nav .active {
+  color: #006f99;
+  -webkit-box-shadow: 0px 1px 0px 0px;
+          box-shadow: 0px 1px 0px 0px;
+  font-weight: 500;
+  cursor: initial;
+  padding-bottom: 20px;
+}
+
+.time-to-show {
+  gap: 15px;
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  margin-bottom: 10px;
+}
+
+.time-to-show .active {
+  text-decoration: underline;
+}
+
+.history {
+  font-size: 16px;
+}
+
+.history .bitcoin-price-table {
+  border: 2px solid #80808045;
+}
+
+.history .table-titles {
+  background-color: #8080801c;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+.history .table-titles p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.history .table-data,
+.history .table-titles {
+  border-bottom: 2px solid #80808045;
+}
+
+.history .table-data {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-padding-start: 15px;
+          padding-inline-start: 15px;
+  padding: 10px;
+}
+
+@media (max-width: 460px) {
+  .history {
+    font-size: 12px;
+  }
+}
+
+.bitcoin-chart {
+  width: 1300px;
+}
+
+@media (min-width: 460px) {
+  .bitcoin-chart {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

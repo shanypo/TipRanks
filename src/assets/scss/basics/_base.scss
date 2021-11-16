@@ -1,0 +1,22 @@
+html {
+    font-family: Roboto, sans-serif;
+    background-color: #eee;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+h2,
+p {
+    margin: 0
+}

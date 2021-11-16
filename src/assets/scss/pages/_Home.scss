@@ -1,0 +1,36 @@
+.main-container {
+    margin-top: 10px;
+    gap: 10px;
+    align-items: flex-start;
+    justify-self: center;
+
+    .stocks-list {
+        grid-template-columns: repeat(3, minmax(150px, 150px));
+        gap: 20px;
+
+        & :hover {
+            background-color: #ec8408;
+            color: #fff;
+        }
+
+        @include for-mobile-layout {
+            grid-template-columns: repeat(1, minmax(150px, 150px));
+
+        }
+    }
+
+    .stock-input {
+        input {
+            border: 2px solid #999;
+            border-radius: 11px;
+            width: 210px;
+            padding: 8px;
+
+            &:hover {
+                border: 2px solid #ec8408;
+            }
+        }
+    }
+
+
+}
